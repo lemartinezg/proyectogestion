@@ -1,0 +1,23 @@
+| Actividad                                            | Código | Duración original (días) | Duración ajustada (días) | Duración redondeada (días) |
+| ---------------------------------------------------- | ------ | ------------------------ | ------------------------ | -------------------------- |
+| Análisis de Requisitos Funcionales y No Funcionales  | A15.1  | 3                        | 3 × 60/69 = 2.61         | 3                          |
+| Modelado de Casos de Uso y Flujos de Usuario         | A15.2  | 3                        | 2.61                     | 3                          |
+| Diseño de Arquitectura de Información                | A16.1  | 2                        | 1.74                     | 2                          |
+| Diseño de Wireframes de Alta y Baja Fidelidad        | A16.2  | 4                        | 3.48                     | 3                          |
+| Prototipado Interactivo (Figma/InVision)             | A16.3  | 3                        | 2.61                     | 3                          |
+| Configuración de Repositorio y Entorno de Desarrollo | A17.1  | 1                        | 0.87                     | 1                          |
+| Implementación de Componentes UI                     | A17.2  | 6                        | 5.22                     | 5                          |
+| Desarrollo de Lógica de Interacción                  | A17.3  | 5                        | 4.35                     | 4                          |
+| Diseño de Base de Datos (Modelo Relacional o NoSQL)  | A18.1  | 3                        | 2.61                     | 3                          |
+| Desarrollo de API REST o GraphQL                     | A18.2  | 5                        | 4.35                     | 4                          |
+| Configuración de Servidores y Seguridad              | A18.3  | 3                        | 2.61                     | 3                          |
+| Integración Frontend-Backend (Axios/Fetch)           | A19.1  | 4                        | 3.48                     | 3                          |
+| Integración de Visualizaciones de Emociones          | A19.2  | 4                        | 3.48                     | 3                          |
+| Validación de Flujos Completo del Sistema            | A19.3  | 2                        | 1.74                     | 2                          |
+| Pruebas Funcionales Automatizadas y Manuales         | A20.1  | 3                        | 2.61                     | 3                          |
+| Pruebas de Usabilidad con Usuarios Piloto            | A20.2  | 2                        | 1.74                     | 2                          |
+| Ajustes de Diseño y Corrección de Errores            | A20.3  | 3                        | 2.61                     | 3                          |
+| Redacción de Manual Técnico y Manual de Usuario      | A21.1  | 3                        | 2.61                     | 3                          |
+| Documentación del Código y Arquitectura              | A21.2  | 2                        | 1.74                     | 2                          |
+| Despliegue Final en Producción (Deploy)              | A22.1  | 2                        | 1.74                     | 2                          |
+| Entrega Oficial y Presentación Final                 | A22.2  | 1                        | 0.87                     | 1                          |
