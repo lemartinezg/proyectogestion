@@ -1,8 +1,4 @@
-Perfecto. Te ayudaré a **desglosar cada actividad** en tareas más específicas y técnicas, enfocadas al desarrollo de software, para que tengas una **lista más completa y realista** que refleje todas las etapas necesarias.
 
-A continuación, amplío y detallo cada actividad en **subtareas específicas**, manteniendo el **formato de la tabla original**, pero ahora cada actividad tendrá un **nivel de granularidad más alto**.
-
----
 
 | Actividad                                                               | Código | WBS   | Responsables                    | Descripción Ampliada                                                                                                                                                               | Predecesoras | Sucesoras | Retardo Adelanto | Holgura Total | Tipo de Enlace |
 | ----------------------------------------------------------------------- | ------ | ----- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------- | ---------------- | ------------- | -------------- |
