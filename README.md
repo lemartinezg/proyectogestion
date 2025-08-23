@@ -1,68 +1,32 @@
+Perfecto. Te ayudaré a **desglosar cada actividad** en tareas más específicas y técnicas, enfocadas al desarrollo de software, para que tengas una **lista más completa y realista** que refleje todas las etapas necesarias.
 
-
-# Plan de Actividades Detallado
-
-## Proyecto: Empresa de Investigación Emocional-Financiera – “Mapa Emocional del Dinero”
-
-### Visión Gerencial y Estrategia de Lanzamiento
+A continuación, amplío y detallo cada actividad en **subtareas específicas**, manteniendo el **formato de la tabla original**, pero ahora cada actividad tendrá un **nivel de granularidad más alto**.
 
 ---
 
-### 1. **Iniciación y Constitución de la Empresa**
+| Actividad                                                               | Código | WBS   | Responsables                    | Descripción Ampliada                                                                                                                                                               | Predecesoras | Sucesoras | Retardo Adelanto | Holgura Total | Tipo de Enlace |
+| ----------------------------------------------------------------------- | ------ | ----- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------- | ---------------- | ------------- | -------------- |
+| **Análisis de Requisitos Funcionales y No Funcionales**                 | A15.1  | 5.1.1 | Líder Técnico, UX/UI            | Identificar y documentar funcionalidades esperadas (módulos, pantallas, interacciones), así como requisitos no funcionales (rendimiento, seguridad, accesibilidad, escalabilidad). | A14          | A15.2     | 0                | 0             | FS             |
+| **Modelado de Casos de Uso y Flujos de Usuario**                        | A15.2  | 5.1.2 | UX/UI, Líder Técnico            | Crear diagramas de casos de uso, flujos de usuario y escenarios de interacción para guiar el diseño y desarrollo técnico.                                                          | A15.1        | A16       | 0                | 0             | FS             |
+| **Diseño de Arquitectura de Información**                               | A16.1  | 5.2.1 | UX Designer                     | Establecer la estructura jerárquica del contenido y funcionalidades (sitemap, árbol de navegación) del mapa emocional.                                                             | A15.2        | A16.2     | 0                | 0             | FS             |
+| **Diseño de Wireframes de Alta y Baja Fidelidad**                       | A16.2  | 5.2.2 | UX Designer, Diseñador Gráfico  | Crear wireframes de baja y alta fidelidad para cada sección/pantalla. Representar organización visual, navegación y jerarquía de información.                                      | A16.1        | A16.3     | 0                | 0             | FS             |
+| **Prototipado Interactivo (Figma/InVision)**                            | A16.3  | 5.2.3 | UX Designer                     | Transformar wireframes en prototipos navegables, incluyendo microinteracciones básicas para pruebas iniciales.                                                                     | A16.2        | A17       | 0                | 0             | FS             |
+| **Configuración de Repositorio y Entorno de Desarrollo**                | A17.1  | 5.3.1 | Dev Frontend, DevOps            | Crear repositorio en Git, configurar entorno local (Node, Vite/Webpack), establecer CI/CD inicial si aplica.                                                                       | A16.3        | A17.2     | 0                | 0             | FS             |
+| **Implementación de Componentes UI**                                    | A17.2  | 5.3.2 | Dev Frontend                    | Codificar los componentes del frontend (botones, formularios, tarjetas, navegación, modales) usando React, Vue o framework elegido.                                                | A17.1        | A17.3     | 0                | 0             | FS             |
+| **Desarrollo de Lógica de Interacción**                                 | A17.3  | 5.3.3 | Dev Frontend                    | Implementar lógica de estados, manejo de eventos, animaciones y navegación entre pantallas.                                                                                        | A17.2        | A19       | 0                | 0             | FS             |
+| **Diseño de Base de Datos (Modelo Relacional o NoSQL)**                 | A18.1  | 5.4.1 | Backend, DevOps                 | Definir el modelo de datos (entidades, relaciones), normalización y estructura para almacenar emociones, decisiones, usuarios.                                                     | A16.3        | A18.2     | 0                | 0             | FS             |
+| **Desarrollo de API REST o GraphQL**                                    | A18.2  | 5.4.2 | Backend                         | Implementar endpoints para creación, consulta, actualización y eliminación de datos. Incluir validaciones, autenticación si aplica.                                                | A18.1        | A18.3     | 0                | 0             | FS             |
+| **Configuración de Servidores y Seguridad**                             | A18.3  | 5.4.3 | DevOps                          | Configurar servidores (Docker, VPS o servicios cloud), certificados SSL, autenticación (JWT, OAuth), y control de acceso.                                                          | A18.2        | A19       | 0                | 0             | FS             |
+| **Integración Frontend-Backend (Axios/Fetch)**                          | A19.1  | 5.5.1 | Dev Team                        | Conectar la interfaz con la API, manejar respuestas, errores, y sincronización de estados con el backend.                                                                          | A17.3,A18.3  | A19.2     | 0                | 0             | FS             |
+| **Integración de Visualizaciones de Emociones (D3.js, Chart.js, etc.)** | A19.2  | 5.5.2 | Dev Team                        | Incrustar gráficos o visualizaciones que representen emociones y decisiones del usuario de forma intuitiva.                                                                        | A19.1        | A19.3     | 0                | 0             | FS             |
+| **Validación de Flujos Completo del Sistema**                           | A19.3  | 5.5.3 | Dev Team                        | Verificar que navegación, lógica, respuestas y visualizaciones funcionen como se espera de extremo a extremo.                                                                      | A19.2        | A20       | 0                | 0             | FS             |
+| **Pruebas Funcionales Automatizadas y Manuales**                        | A20.1  | 5.6.1 | QA                              | Realizar pruebas de funcionalidades clave, flujos críticos, validaciones de formularios y errores comunes.                                                                         | A19.3        | A20.2     | 0                | 0             | FS             |
+| **Pruebas de Usabilidad con Usuarios Piloto**                           | A20.2  | 5.6.2 | UX Researcher                   | Realizar sesiones con usuarios para observar comportamiento y detectar problemas de usabilidad o experiencia emocional.                                                            | A20.1        | A20.3     | 0                | 0             | FS             |
+| **Ajustes de Diseño y Corrección de Errores**                           | A20.3  | 5.6.3 | Dev Team, UX Designer           | Aplicar mejoras y correcciones basadas en los resultados de las pruebas funcionales y de usabilidad.                                                                               | A20.2        | A21       | 0                | 0             | FS             |
+| **Redacción de Manual Técnico y Manual de Usuario**                     | A21.1  | 5.7.1 | Líder Técnico, Redactor Técnico | Crear documentación técnica del sistema (infraestructura, APIs, instalación), así como guía de uso para usuarios finales.                                                          | A20.3        | A21.2     | 0                | 0             | FS             |
+| **Documentación del Código y Arquitectura**                             | A21.2  | 5.7.2 | Desarrolladores                 | Comentar código, crear diagramas de arquitectura (plantillas, flujos, relaciones), y actualizar README del repositorio.                                                            | A21.1        | A22       | 0                | 0             | FS             |
+| **Despliegue Final en Producción (Deploy)**                             | A22.1  | 5.8.1 | DevOps, Gerente Proyecto        | Realizar la publicación oficial del sistema en un entorno de producción, revisar certificados, SEO básico, rendimiento.                                                            | A21.2        | A22.2     | 0                | 0             | FS             |
+| **Entrega Oficial y Presentación Final**                                | A22.2  | 5.8.2 | Gerente Proyecto, Dev Team      | Presentar el proyecto a las partes interesadas, entregar documentación, manuales, y obtener aprobación formal del producto.                                                        | A22.1        | A23       | 0                | 0             | FS             |
 
-| ACTIVIDAD                         | ID  | EDT | RECURSOS                             | DESCRIPCIÓN GERENCIAL                                                                           | PREDECESORAS | SUCESORAS | ADELANTO | RETRASO | RELACIÓN DE PRECEDENCIA |
-| --------------------------------- | --- | --- | ------------------------------------ | ----------------------------------------------------------------------------------------------- | ------------ | --------- | -------- | ------- | ----------------------- |
-| Análisis de Viabilidad            | A01 | 1.1 | Gerente General, Analista Financiero | Evaluar mercado, competencia, demanda potencial, y viabilidad financiera para crear la empresa. | -            | A02       | 0        | 0       | FS                      |
-| Definición del Modelo de Negocio  | A02 | 1.2 | Gerente, Consultor de Negocios       | Definir propuesta de valor, fuentes de ingreso, estructura de costos y segmento de clientes.    | A01          | A03       | 0        | 0       | FS                      |
-| Constitución Legal de la Empresa  | A03 | 1.3 | Asesor Legal, Gerente                | Registrar empresa, obtener licencias, y cumplir con regulaciones legales y fiscales.            | A02          | A04       | 0        | 5       | FS                      |
-| Planificación Estratégica Inicial | A04 | 1.4 | Gerente, Director de Proyecto        | Definir visión, misión, objetivos estratégicos y estructura organizacional inicial.             | A03          | A05       | 0        | 0       | FS                      |
-
----
-
-### 2. **Planificación del Proyecto de Investigación**
-
-| ACTIVIDAD                        | ID  | EDT | RECURSOS                        | DESCRIPCIÓN GERENCIAL                                                                          | PREDECESORAS | SUCESORAS | ADELANTO | RETRASO | RELACIÓN DE PRECEDENCIA |
-| -------------------------------- | --- | --- | ------------------------------- | ---------------------------------------------------------------------------------------------- | ------------ | --------- | -------- | ------- | ----------------------- |
-| Formación del Equipo Técnico     | A05 | 2.1 | Gerente RRHH, Reclutadores      | Contratar especialistas en investigación cualitativa y cuantitativa, analistas, y diseñadores. | A04          | A06       | 0        | 2       | FS                      |
-| Definición detallada del alcance | A06 | 2.2 | Gerente Proyecto, Líder Técnico | Documentar entregables, restricciones, supuestos y criterios de éxito del proyecto.            | A05          | A07       | 0        | 0       | FS                      |
-| Elaboración del Plan de Proyecto | A07 | 2.3 | PMO, Gerente Proyecto           | Cronograma, presupuesto, gestión de riesgos, comunicación y calidad.                           | A06          | A08       | 0        | 0       | FS                      |
-
----
-
-### 3. **Ejecución del Proyecto de Investigación**
-
-| ACTIVIDAD                    | ID  | EDT | RECURSOS                                | DESCRIPCIÓN GERENCIAL                                                                   | PREDECESORAS | SUCESORAS | ADELANTO | RETRASO | RELACIÓN DE PRECEDENCIA |
-| ---------------------------- | --- | --- | --------------------------------------- | --------------------------------------------------------------------------------------- | ------------ | --------- | -------- | ------- | ----------------------- |
-| Diseño de Instrumentos       | A08 | 3.1 | Equipo Técnico, Metodólogo, UX Designer | Crear encuestas y guías de entrevista alineadas con objetivos y población objetivo.     | A07          | A09       | 0        | 0       | FS                      |
-| Validación Piloto            | A09 | 3.2 | Equipo Campo, Coordinador               | Ejecutar prueba piloto, recoger feedback y ajustar instrumentos.                        | A08          | A10       | 0        | 1       | FS                      |
-| Reclutamiento y Capacitación | A10 | 3.3 | RRHH, Gerente de Proyecto               | Reclutar muestra representativa y capacitar al equipo de campo en protocolos y ética.   | A09          | A11, A12  | 0        | 0       | FS                      |
-| Aplicación de Entrevistas    | A11 | 3.4 | Equipo Campo, Transcriptores            | Realizar entrevistas cualitativas en campo con rigurosidad y seguimiento.               | A10          | A13       | 0        | 0       | FS                      |
-| Aplicación de Encuestas      | A12 | 3.5 | Equipo Encuestas, Plataforma Digital    | Distribuir encuestas cuantitativas, garantizar respuestas y controlar calidad de datos. | A10          | A13       | 0        | 0       | FS                      |
-
----
-
-### 4. **Control y Seguimiento**
-
-| ACTIVIDAD              | ID  | EDT | RECURSOS                    | DESCRIPCIÓN GERENCIAL                                                                                  | PREDECESORAS | SUCESORAS | ADELANTO | RETRASO | RELACIÓN DE PRECEDENCIA |
-| ---------------------- | --- | --- | --------------------------- | ------------------------------------------------------------------------------------------------------ | ------------ | --------- | -------- | ------- | ----------------------- |
-| Supervisión de Calidad | A13 | 4.1 | Gerente Calidad, PMO        | Revisión continua de calidad de datos y procesos. Implementar acciones correctivas.                    | A11, A12     | A14       | 0        | 0       | FS                      |
-| Análisis de Datos      | A14 | 4.2 | Analistas, Gerente Proyecto | Integrar resultados cualitativos y cuantitativos, detectar patrones emocionales, y validar resultados. | A13          | A15       | 0        | 0       | FS                      |
-
----
-
-### 5. **Cierre y Entrega**
-
-| ACTIVIDAD                    | ID  | EDT | RECURSOS                         | DESCRIPCIÓN GERENCIAL                                                                | PREDECESORAS | SUCESORAS | ADELANTO | RETRASO | RELACIÓN DE PRECEDENCIA |
-| ---------------------------- | --- | --- | -------------------------------- | ------------------------------------------------------------------------------------ | ------------ | --------- | -------- | ------- | ----------------------- |
-| Diseño y Validación del Mapa | A15 | 5.1 | Diseñador, Gerente, Investigador | Visualización gráfica de resultados para facilitar comprensión y toma de decisiones. | A14          | A16       | 0        | 0       | FS                      |
-| Elaboración Informe Final    | A16 | 5.2 | Gerente Proyecto, Redactores     | Documentación exhaustiva de hallazgos, recomendaciones y planes futuros.             | A15          | -         | 0        | 0       | FS                      |
-
----
-
-# Comentarios desde la visión del gerente de proyecto de ingeniería:
-
-* **Riesgos Identificados:** retrasos en constitución legal, baja tasa de respuesta, problemas de calidad en datos.
-* **Mitigación:** planificación con holgura para actividades críticas, validación piloto, capacitación del equipo.
-* **Recursos:** imprescindible contar con equipo multidisciplinario, soporte legal y administrativo.
 * **Herramientas:** uso de software para gestión (MS Project, Trello), análisis estadístico (SPSS, R) y diseño (Adobe, Tableau).
 * **Comunicación:** establecer reportes periódicos con stakeholders y reuniones semanales de seguimiento.
