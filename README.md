@@ -68,7 +68,3 @@
 * **Recursos:** imprescindible contar con equipo multidisciplinario, soporte legal y administrativo.
 * **Herramientas:** uso de software para gestión (MS Project, Trello), análisis estadístico (SPSS, R) y diseño (Adobe, Tableau).
 * **Comunicación:** establecer reportes periódicos con stakeholders y reuniones semanales de seguimiento.
-
----
-
-¿Quieres que te prepare el cronograma con estimación de tiempos y recursos para cada actividad? ¿O prefieres que te ayude a diseñar los indicadores de seguimiento (KPIs) para la gestión del proyecto?
