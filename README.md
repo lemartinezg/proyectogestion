@@ -1,6 +1,4 @@
-¡Entendido! Vamos a armar un plan mucho más detallado y profesional desde la óptica de un gerente que está lanzando esta empresa/proyecto, pensando en todos los aspectos gerenciales que una materia de **Gestión de Proyectos de Ingeniería** valoraría.
 
----
 
 # Plan de Actividades Detallado
 
