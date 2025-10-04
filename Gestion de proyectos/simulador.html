@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmoFinance</title>
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Archivo de estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- NAVBAR -->
+  <nav class="border-b border-gray-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <div class="flex items-center gap-3">
+      <a href="index.html" 
+         class="flex items-center gap-2 text-gray-600 hover:text-green-600 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             fill="none" viewBox="0 0 24 24" 
+             stroke-width="2" stroke="currentColor" 
+             class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="text-sm font-medium">Volver</span>
+      </a>
+      <h1 class="text-2xl font-bold text-green-600">EmoFinance</h1>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto p-6 space-y-8">
+    <!-- Encabezado -->
+    <section class="text-center">
+      <h2 class="text-3xl font-bold mb-2">Mapeo Emocional Financiero</h2>
+      <p class="text-gray-600 text-lg">Registra tus gastos y las emociones asociadas para visualizar patrones en tu comportamiento financiero.</p>
+    </section>
+
+    <!-- Formulario + Gráficas -->
+    <section class="grid lg:grid-cols-3 gap-8">
+      <!-- Formulario -->
+      <div class="lg:col-span-1 card shadow-lg border rounded-lg hover:shadow-xl transition-all duration-300 bg-white">
+        <header class="bg-gradient-to-r from-green-500 to-teal-500 text-white p-4 rounded-t-lg">
+          <h3 class="text-xl font-semibold">Registrar Gasto</h3>
+          <p class="text-sm opacity-90">Añade un nuevo gasto y la emoción que experimentaste</p>
+        </header>
+        <div class="p-6">
+          <form id="expense-form" class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium">Monto ($)</label>
+              <input id="amount" type="number" step="0.01" placeholder="0.00"
+                class="w-full border rounded-md px-3 py-2 mt-1" required>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium">Categoría</label>
+              <select id="category" class="w-full border rounded-md px-3 py-2 mt-1" required>
+                <option value="" disabled selected>Selecciona categoría</option>
+                <option value="alimentacion">Alimentación</option>
+                <option value="transporte">Transporte</option>
+                <option value="ocio">Ocio</option>
+                <option value="salud">Salud</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium">Emoción</label>
+              <select id="emotion" class="w-full border rounded-md px-3 py-2 mt-1" required>
+                <option value="" disabled selected>Selecciona emoción</option>
+                <option value="feliz">Feliz</option>
+                <option value="triste">Triste</option>
+                <option value="ansioso">Ansioso</option>
+                <option value="neutral">Neutral</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium">Intensidad Emocional (1-10)</label>
+              <input id="intensity" type="range" min="1" max="10" value="5" class="w-full mt-2" />
+              <p id="intensity-value" class="text-center text-sm text-gray-500 mt-1">5/10</p>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium">Descripción (opcional)</label>
+              <textarea id="description" rows="3" class="w-full border rounded-md px-3 py-2 mt-1"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition">
+              Registrar Gasto
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Gráficas -->
+      <div class="lg:col-span-2 space-y-6">
+        <div class="card p-4 bg-white border rounded-lg shadow">
+          <h3 class="text-lg font-semibold text-green-600 mb-2">Distribución de Emociones</h3>
+          <canvas id="emotionChart"></canvas>
+        </div>
+
+        <div class="card p-4 bg-white border rounded-lg shadow">
+          <h3 class="text-lg font-semibold text-green-600 mb-2">Gastos por Categoría</h3>
+          <canvas id="categoryChart"></canvas>
+        </div>
+
+        <div class="card p-4 bg-white border rounded-lg shadow">
+          <h3 class="text-lg font-semibold text-green-600 mb-2">Relación Monto vs Intensidad</h3>
+          <canvas id="scatterChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="grid grid-cols-2 gap-4 text-center">
+      <div class="card bg-white border rounded-lg shadow p-4">
+        <p class="text-gray-500 text-sm">Total Gastado</p>
+        <p id="total-amount" class="text-2xl font-bold text-green-600">$0.00</p>
+      </div>
+      <div class="card bg-white border rounded-lg shadow p-4">
+        <p class="text-gray-500 text-sm">Intensidad Promedio</p>
+        <p id="avg-intensity" class="text-2xl font-bold text-green-600">0/10</p>
+      </div>
+    </section>
+
+    <!-- Lista de gastos -->
+    <section class="card bg-white border rounded-lg shadow p-4">
+      <h3 class="text-lg font-semibold text-green-600 mb-2">Gastos Registrados</h3>
+      <ul id="expense-list" class="space-y-2"></ul>
+    </section>
+  </main>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>

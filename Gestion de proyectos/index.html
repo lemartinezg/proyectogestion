@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EmoFinance - Mapeo Emocional de Decisiones Financieras</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Meta -->
+  <meta name="description" content="Plataforma interactiva para mapear emociones que influyen en decisiones financieras (investigación cualitativa y cuantitativa)." />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="header" role="banner">
+    <div class="container header-content">
+      <div class="logo" aria-hidden="false">
+        <div class="logo-icon" aria-hidden="true">
+          <!-- decorative icon -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+            <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">EmoFinance</span>
+          <span class="logo-subtitle">Mapeo Emocional Financiero</span>
+        </div>
+      </div>
+
+      <nav class="nav-desktop" role="navigation" aria-label="Navegación principal">
+        <a class="nav-link" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#investigacion">Investigación</a>
+        <a class="nav-link" href="#visualizacion">Visualización</a>
+        <a class="nav-link" href="#metodologia">Metodología</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="header-cta">
+        <button class="btn btn-outline btn-sm" aria-label="Ver demo">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" x2="12" y1="20" y2="10"/>
+            <line x1="18" x2="18" y1="20" y2="4"/>
+            <line x1="6" x2="6" y1="20" y2="16"/>
+          </svg>
+          Ver Demo
+        </button>
+        <a href="simulador.html" class="btn btn-primary btn-sm btn-full">Participar en Estudio</a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menú móvil">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="4" x2="20" y1="6" y2="6"/>
+          <line x1="4" x2="20" y1="12" y2="12"/>
+          <line x1="4" x2="20" y1="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="nav-mobile" id="mobileMenu" aria-hidden="true">
+      <a class="nav-mobile-link" href="#inicio">Inicio</a>
+      <a class="nav-mobile-link" href="#investigacion">Investigación</a>
+      <a class="nav-mobile-link" href="#visualizacion">Visualización</a>
+      <a class="nav-mobile-link" href="#metodologia">Metodología</a>
+      <a class="nav-mobile-link" href="#contacto">Contacto</a>
+      <div class="nav-mobile-cta">
+        <button class="btn btn-outline btn-sm btn-full">Ver Demo</button>
+        <a href="simulador.html" class="btn btn-primary btn-sm btn-full">Participar en Estudio</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="inicio" class="hero-section">
+      <div class="container hero-content">
+        <div class="badge">Investigación Cualitativa y Cuantitativa</div>
+
+        <h1 class="hero-title">Mapeo Emocional de <span class="gradient-text">Decisiones Financieras</span></h1>
+
+        <p class="hero-subtitle">
+          Plataforma interactiva que analiza y visualiza las emociones que influyen en el comportamiento económico.
+          Utilizamos metodologías avanzadas para crear mapas emocionales que revelan patrones en la toma de decisiones financieras.
+        </p>
+
+        <div class="hero-cta">
+          <div class="hero-cta-buttons">
+            <button class="btn btn-primary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+              </svg>
+              Explorar Mapa Emocional
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+              </svg>
+            </button>
+
+            <a href="#visualizacion" class="btn btn-outline btn-lg">Ver Demostración</a>
+          </div>
+
+          <div class="hero-stats" role="list" aria-label="Estadísticas principales">
+            <div class="stat-item" role="listitem">
+              <div class="stat-icon stat-icon-primary" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" x2="12" y1="2" y2="22"/>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <p class="stat-label">Decisiones Analizadas</p>
+              <p class="stat-value">1,200+</p>
+            </div>
+
+            <div class="stat-item" role="listitem">
+              <div class="stat-icon stat-icon-green" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                </svg>
+              </div>
+              <p class="stat-label">Emociones Mapeadas</p>
+              <p class="stat-value">25</p>
+            </div>
+
+            <div class="stat-item" role="listitem">
+              <div class="stat-icon stat-icon-blue" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                  <polyline points="16 7 22 7 22 13"/>
+                </svg>
+              </div>
+              <p class="stat-label">Precisión del Modelo</p>
+              <p class="stat-value">94%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-decoration" aria-hidden="true"></div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features-section" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="investigacion" class="section-title">Objetivos y Funcionalidades</h2>
+          <p class="section-subtitle">
+            Nuestro sistema integra múltiples metodologías de investigación para crear una plataforma completa de análisis emocional financiero.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Repetir las tarjetas de funcionalidad -->
+          <article class="feature-card">
+            <div class="feature-header">
+              <div class="feature-icon feature-icon-primary" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/>
+                </svg>
+              </div>
+              <span class="feature-badge">Objetivo Principal</span>
+            </div>
+            <h3 class="feature-title">Modelo Visual Interactivo</h3>
+            <p class="feature-description">Interfaz intuitiva que permite explorar y visualizar las emociones que influyen en el comportamiento económico.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-header">
+              <div class="feature-icon feature-icon-green" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" x2="12" y1="20" y2="10"/>
+                  <line x1="18" x2="18" y1="20" y2="4"/>
+                  <line x1="6" x2="6" y1="20" y2="16"/>
+                </svg>
+              </div>
+              <span class="feature-badge">Metodología</span>
+            </div>
+            <h3 class="feature-title">Análisis Cuantitativo</h3>
+            <p class="feature-description">Procesamiento estadístico avanzado de datos emocionales para identificar patrones significativos.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-header">
+              <div class="feature-icon feature-icon-blue" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                </svg>
+              </div>
+              <span class="feature-badge">Metodología</span>
+            </div>
+            <h3 class="feature-title">Investigación Cualitativa</h3>
+            <p class="feature-description">Entrevistas en profundidad y análisis narrativo para comprender las experiencias emocionales.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-header">
+              <div class="feature-icon feature-icon-orange" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/>
+                </svg>
+              </div>
+              <span class="feature-badge">Técnico</span>
+            </div>
+            <h3 class="feature-title">Sistema Modular</h3>
+            <p class="feature-description">Arquitectura escalable que gestiona y almacena datos de manera segura con alto rendimiento.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-header">
+              <div class="feature-icon feature-icon-red" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                </svg>
+              </div>
+              <span class="feature-badge">Seguridad</span>
+            </div>
+            <h3 class="feature-title">Seguridad y Privacidad</h3>
+            <p class="feature-description">Protección avanzada de datos personales y emocionales con estándares internacionales.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-header">
+              <div class="feature-icon feature-icon-primary" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+                </svg>
+              </div>
+              <span class="feature-badge">Técnico</span>
+            </div>
+            <h3 class="feature-title">APIs Integradas</h3>
+            <p class="feature-description">Integración con sistemas externos para recopilación y análisis en tiempo real.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-header">
+              <div class="feature-icon feature-icon-green" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2.5-2 4-2 2 1 2 1"/>
+                </svg>
+              </div>
+              <span class="feature-badge">Calidad</span>
+            </div>
+            <h3 class="feature-title">Pruebas de Usabilidad</h3>
+            <p class="feature-description">Testing exhaustivo para garantizar accesibilidad y rendimiento.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-header">
+              <div class="feature-icon feature-icon-blue" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+              <span class="feature-badge">DevOps</span>
+            </div>
+            <h3 class="feature-title">Despliegue Eficiente</h3>
+            <p class="feature-description">Monitoreo continuo y actualizaciones automáticas para máxima disponibilidad.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-header">
+              <div class="feature-icon feature-icon-orange" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                </svg>
+              </div>
+              <span class="feature-badge">IA</span>
+            </div>
+            <h3 class="feature-title">Análisis Predictivo</h3>
+            <p class="feature-description">Modelos de machine learning para predecir comportamientos financieros basados en emociones.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP / VISUALIZACIÓN -->
+    <section id="visualizacion" class="map-section" aria-labelledby="visualization-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-outline">Vista Previa Interactiva</div>
+          <h2 id="visualization-title" class="section-title">Mapa Emocional en Tiempo Real</h2>
+          <p class="section-subtitle">Visualización dinámica de las emociones más frecuentes en decisiones financieras, basada en datos reales de nuestra investigación.</p>
+        </div>
+
+        <div class="map-grid">
+          <div class="emotion-list" aria-hidden="false">
+            <!-- Example emotion cards -->
+            <div class="emotion-card">
+              <div class="emotion-content">
+                <div class="emotion-info">
+                  <div class="emotion-icon emotion-icon-confidence" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                      <polyline points="16 7 22 7 22 13"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="emotion-name">Confianza</h3>
+                    <p class="emotion-desc">Decisiones financieras tomadas con seguridad</p>
+                  </div>
+                </div>
+                <div class="emotion-stats">
+                  <div class="emotion-percentage">85%</div>
+                  <div class="emotion-label">Prevalencia</div>
+                </div>
+              </div>
+              <div class="progress-bar" aria-hidden="true">
+                <div class="progress-fill progress-confidence" style="width:85%"></div>
+              </div>
+            </div>
+
+            <div class="emotion-card">
+              <div class="emotion-content">
+                <div class="emotion-info">
+                  <div class="emotion-icon emotion-icon-stress" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="emotion-name">Ansiedad</h3>
+                    <p class="emotion-desc">Estrés relacionado con inversiones</p>
+                  </div>
+                </div>
+                <div class="emotion-stats">
+                  <div class="emotion-percentage">65%</div>
+                  <div class="emotion-label">Prevalencia</div>
+                </div>
+              </div>
+              <div class="progress-bar" aria-hidden="true">
+                <div class="progress-fill progress-stress" style="width:65%"></div>
+              </div>
+            </div>
+
+            <div class="emotion-card">
+              <div class="emotion-content">
+                <div class="emotion-info">
+                  <div class="emotion-icon emotion-icon-positive" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="emotion-name">Optimismo</h3>
+                    <p class="emotion-desc">Expectativas positivas sobre el futuro financiero</p>
+                  </div>
+                </div>
+                <div class="emotion-stats">
+                  <div class="emotion-percentage">78%</div>
+                  <div class="emotion-label">Prevalencia</div>
+                </div>
+              </div>
+              <div class="progress-bar" aria-hidden="true">
+                <div class="progress-fill progress-positive" style="width:78%"></div>
+              </div>
+            </div>
+
+            <div class="emotion-card">
+              <div class="emotion-content">
+                <div class="emotion-info">
+                  <div class="emotion-icon emotion-icon-neutral" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"/><path d="M8 15h8"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="emotion-name">Cautela</h3>
+                    <p class="emotion-desc">Prudencia en la toma de decisiones</p>
+                  </div>
+                </div>
+                <div class="emotion-stats">
+                  <div class="emotion-percentage">72%</div>
+                  <div class="emotion-label">Prevalencia</div>
+                </div>
+              </div>
+              <div class="progress-bar" aria-hidden="true">
+                <div class="progress-fill progress-neutral" style="width:72%"></div>
+              </div>
+            </div>
+
+            <div class="emotion-card">
+              <div class="emotion-content">
+                <div class="emotion-info">
+                  <div class="emotion-icon emotion-icon-negative" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="emotion-name">Frustración</h3>
+                    <p class="emotion-desc">Descontento con resultados financieros</p>
+                  </div>
+                </div>
+                <div class="emotion-stats">
+                  <div class="emotion-percentage">45%</div>
+                  <div class="emotion-label">Prevalencia</div>
+                </div>
+              </div>
+              <div class="progress-bar" aria-hidden="true">
+                <div class="progress-fill progress-negative" style="width:45%"></div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="visualization-card" aria-labelledby="interactive-title">
+            <div class="card-header">
+              <div class="card-title-wrapper">
+                <div class="card-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                  </svg>
+                </div>
+                <span id="interactive-title">Visualización Interactiva</span>
+              </div>
+              <p class="card-description">Mapa emocional dinámico que muestra las correlaciones entre emociones y decisiones financieras.</p>
+            </div>
+
+            <div class="visualization-preview" aria-hidden="true">
+              <div class="emotion-network">
+                <div class="central-node pulse-animation" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                  </svg>
+                </div>
+
+                <div class="satellite-node node-1 float-animation" aria-hidden="true"></div>
+                <div class="satellite-node node-2 float-animation" aria-hidden="true"></div>
+                <div class="satellite-node node-3 float-animation" aria-hidden="true"></div>
+                <div class="satellite-node node-4 float-animation" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <div class="card-actions">
+              <a href="simulador.html" class="btn btn-primary btn-full">Explorar Mapa Completo</a>
+              <a href="#metodologia" class="btn btn-outline btn-full">Ver Metodología</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHODOLOGY -->
+    <section id="metodologia" class="methodology-section" aria-labelledby="methodology-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-outline">Metodología de Investigación</div>
+          <h2 id="methodology-title" class="section-title">Proceso de Desarrollo Científico</h2>
+          <p class="section-subtitle">Nuestro enfoque combina metodologías cualitativas y cuantitativas para crear un modelo robusto y científicamente válido.</p>
+        </div>
+
+        <div class="methodology-grid">
+          <article class="methodology-card">
+            <div class="methodology-header">
+              <span class="phase-badge">Fase 1</span>
+              <div class="methodology-icon methodology-icon-primary" aria-hidden="true"></div>
+            </div>
+            <h3 class="methodology-title">Recolección de Datos Cualitativos</h3>
+            <p class="methodology-description">Entrevistas en profundidad y grupos focales para comprender las experiencias emocionales.</p>
+            <ul class="methodology-list">
+              <li>Entrevistas semiestructuradas</li>
+              <li>Análisis narrativo</li>
+              <li>Codificación temática</li>
+              <li>Validación con participantes</li>
+            </ul>
+          </article>
+
+          <article class="methodology-card">
+            <div class="methodology-header">
+              <span class="phase-badge">Fase 2</span>
+              <div class="methodology-icon methodology-icon-green" aria-hidden="true"></div>
+            </div>
+            <h3 class="methodology-title">Análisis Cuantitativo</h3>
+            <p class="methodology-description">Procesamiento estadístico y modelado de patrones emocionales identificados.</p>
+            <ul class="methodology-list">
+              <li>Análisis estadístico descriptivo</li>
+              <li>Correlaciones emocionales</li>
+              <li>Modelos predictivos</li>
+              <li>Validación cruzada</li>
+            </ul>
+          </article>
+
+          <article class="methodology-card">
+            <div class="methodology-header">
+              <span class="phase-badge">Fase 3</span>
+              <div class="methodology-icon methodology-icon-blue" aria-hidden="true"></div>
+            </div>
+            <h3 class="methodology-title">Desarrollo del Sistema</h3>
+            <p class="methodology-description">Construcción de la plataforma interactiva y APIs para visualización de datos.</p>
+            <ul class="methodology-list">
+              <li>Arquitectura modular</li>
+              <li>APIs y endpoints para visualizaciones</li>
+              <li>Integración en tiempo real</li>
+            </ul>
+          </article>
+
+                    <article class="methodology-card">
+            <div class="methodology-header">
+              <span class="phase-badge">Fase 4</span>
+              <div class="methodology-icon methodology-icon-green" aria-hidden="true"></div>
+            </div>
+            <h3 class="methodology-title">Validación y Despliegue</h3>
+            <p class="methodology-description">Pruebas exhaustivo de usabilidad e implementacion seguro del sistema</p>
+            <ul class="methodology-list">
+              <li>Testing de usabilidad</li>
+              <li>Pruebas de rendimiento</li>
+              <li>Auditoría de seguridad</li>
+              <li>Monitoreo continuo</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- FOOTER -->
+<footer id="contacto" class="footer">
+  <div class="container footer-grid">
+    
+    <!-- Columna izquierda -->
+    <div class="footer-brand">
+      <h3 class="footer-logo">EmoFinance</h3>
+      <p class="footer-subtitle">Mapeo Emocional Financiero</p>
+      <p class="footer-description">
+        Plataforma de investigación que analiza las emociones que influyen 
+        en las decisiones financieras, utilizando metodologías científicas 
+        avanzadas para crear mapas emocionales interactivos.
+      </p>
+      <div class="footer-social">
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+      </div>
+    </div>
+
+    <!-- Columna de navegación -->
+    <div class="footer-nav">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#metodologia">Metodología</a></li>
+        <li><a href="#objetivos">Visualización</a></li>
+        <li><a href="#investigacion">Investigación</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna de contacto -->
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="mailto:investigacion@emofinance.com">investigacion@emofinance.com</a></li>
+        <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+        <li>Universidad de Investigación</li>
+        <li>Departamento de Psicología Económica</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Línea inferior -->
+  <div class="footer-bottom">
+    <p>© 2025 EmoFinance. Todos los derechos reservados. Proyecto de investigación académica.</p>
+    <div class="footer-links">
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+      <a href="#">Ética de Investigación</a>
+    </div>
+  </div>
+</footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
